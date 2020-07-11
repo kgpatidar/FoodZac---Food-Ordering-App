@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFEF"
+    tools:context=".HomePage">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="55dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <RelativeLayout
+                android:id="@+id/restuarentMaintopRelativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FDF3E7"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/locationlogo"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_location_on_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/locationofdelievettextviewinhomepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toStartOf="@+id/searchiconinhomepage"
+                    android:layout_toEndOf="@+id/locationlogo"
+                    android:fontFamily="@font/geo"
+                    android:maxLines="1"
+                    android:text="F-3, IIST Collage, Rau, Indore, M.P."
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/searchiconinhomepage"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_search_black_24dp"></ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/restuarentsearchRelativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FCE4C5"
+                android:visibility="invisible">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTexttoseacrhnewrestaurent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toStartOf="@id/searchautotexticoninhomepage"
+                    android:background="@drawable/edittextbackground"
+                    android:backgroundTint="#FCE4C5"
+                    android:completionThreshold="1"
+                    android:hint="Search"
+                    android:textColorHint="#F1ECEC"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#3C3838"></AutoCompleteTextView>
+
+                <ImageView
+                    android:id="@+id/searchautotexticoninhomepage"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"
+                    android:src="@drawable/ic_search_black_24dp"></ImageView>
+
+
+                <ImageView
+                    android:id="@+id/crossiconinhomepage"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:rotation="45"
+                    android:src="@drawable/ic_add_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/restaurentListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:padding="8dp"></ListView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/profilefloatingbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/floatingbuttonbackgrounf"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_person_black_24dp"></ImageView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loaderathomepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="130dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:tooltipText="Loading..."
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+    </ProgressBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

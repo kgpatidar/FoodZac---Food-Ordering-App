@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestuarantPage">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayoutforadded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/orangeMain"></androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageofrestinrestaurantpage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:alpha="0.6"
+            android:src="@drawable/restimage1"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameofrestaurantinrestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="Jimo Ji Restaurant"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24dp"></TextView>
+
+            <TextView
+                android:id="@+id/descofrestaurantinrestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/geo"
+                android:text="Jimo Ji Restaurant"
+                android:textAlignment="center"
+                android:textColor="#FDFCFC"
+                android:textSize="23dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/timeofrestaurantinrestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/geo"
+                android:text="Jimo Ji Restaurant"
+                android:textAlignment="center"
+                android:textColor="#EE1B1A1A"
+                android:textSize="19dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageofrestinrestaurantpage"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_restaurant_menu_black_24dp"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fira_mono_bold"
+                    android:padding="5dp"
+                    android:text="Menu"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"></TextView>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/menuofrestaurantlistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></ListView>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

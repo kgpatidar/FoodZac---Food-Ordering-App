@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".LoginSignup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="You can not use this in Landscape Mode."
+        android:gravity="center"
+        android:textSize="18dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/foodzacicon"></ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbackground"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Username"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:fontFamily="@font/fira_mono_bold"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbackground"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:fontFamily="@font/fira_mono_bold"></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/buttonbackground"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fira_mono_bold"
+            android:textSize="25dp">
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/notyetmemeberintent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Yet Member? "
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fira_mono_bold"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:textColor="#F36629"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fira_mono_bold"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/signuplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/foodzacicon"></ImageView>
+
+        <EditText
+            android:id="@+id/fullnameinsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbackground"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Fullname"
+            android:textAlignment="center"
+            android:fontFamily="@font/fira_mono_bold"></EditText>
+
+        <EditText
+            android:id="@+id/usernameinsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbackground"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:fontFamily="@font/fira_mono_bold"></EditText>
+
+        <EditText
+            android:id="@+id/passwordinsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbackground"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Password"
+            android:textAlignment="center"
+            android:fontFamily="@font/fira_mono_bold"></EditText>
+
+        <EditText
+            android:id="@+id/locationinsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbackground"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Location"
+            android:minLines="2"
+            android:maxLines="4"
+            android:textAlignment="center"
+            android:fontFamily="@font/fira_mono_bold"></EditText>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:buttonTint="@color/orangeMain"
+                android:fontFamily="@font/fira_mono_bold"
+                android:layout_marginRight="40dp"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orangeMain"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="Female"></RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/buttonbackground"
+            android:text="signup"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fira_mono_bold"
+            android:textSize="25dp">
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/alreadymemberintent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Member? "
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fira_mono_bold"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="#F36629"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fira_mono_bold"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

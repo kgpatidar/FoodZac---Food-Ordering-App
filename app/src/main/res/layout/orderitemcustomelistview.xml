@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_radio_button_checked_black_24dp"></ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nameofitemtobeorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Panner Masala"
+                    android:textColor="#000000"
+                    android:textSize="20dp"></TextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonbackground"
+            android:layout_toStartOf="@+id/sdafadsfafas"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/decresenumberofitems"
+                android:layout_width="30dp"
+                android:layout_height="29dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="-"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonbackground"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <TextView
+                android:id="@+id/numberofperitemstoorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/fira_mono_bold"
+                android:textSize="20dp"></TextView>
+
+            <Button
+                android:id="@+id/incresenumberofitems"
+                android:layout_width="30dp"
+                android:layout_height="29dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/fira_mono_bold"
+                android:layout_alignParentRight="true"
+                android:text="+"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonbackground"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sdafadsfafas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginRight="60dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:rotation="45"
+            android:textColor="#60615E"></TextView>//
+
+        <TextView
+            android:id="@+id/priceofitemtobeorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Rs.120"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/geo"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>

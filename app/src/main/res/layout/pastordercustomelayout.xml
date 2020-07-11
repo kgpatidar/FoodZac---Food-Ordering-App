@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/numberoforderinpastorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="#1"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/nameofrestaurantinpastorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="Jimo ji Restaurant"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/referencetorestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_info_black_24dp"
+                android:layout_marginTop="10dp"></ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/orderiteminpastorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"></TextView>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/nettotalamoutotbepaidinpastorder"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="Total Amount -  "
+                android:textAlignment="center"
+                android:textColor="#333131"
+                android:textSize="13dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/nettotalamoutotbepaidinpastorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="Rs.1200"
+                android:textColor="#C51162"
+                android:textSize="13dp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/dgsfgsdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="  Date of Order : "
+                android:textAlignment="center"
+                android:textSize="10dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/dateoforderinpastorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/dgsfgsdg"
+                android:text="12/12/2012"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dfdgsfgsdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="  Time of Order : "
+                android:textAlignment="center"
+                android:textSize="10dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/timeoforderinpastorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/dfdgsfgsdg"
+                android:text="12:30 PM"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/statusoforderinpastorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivered"
+            android:textAlignment="center"
+            android:fontFamily="@font/fira_mono_bold"
+            android:textColor="@color/orangeMain"></TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

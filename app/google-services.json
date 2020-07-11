@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "445403904720",
+    "firebase_url": "https://foodzac-f91d9.firebaseio.com",
+    "project_id": "foodzac-f91d9",
+    "storage_bucket": "foodzac-f91d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445403904720:android:ff4b1cc569b99575933cd5",
+        "android_client_info": {
+          "package_name": "com.AndroKG.foodzac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445403904720-k8669orkttqnmodq9b2luhcf8druj959.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.AndroKG.foodzac",
+            "certificate_hash": "5b0396d392ed1139e921df250eddfcd28fa2185d"
+          }
+        },
+        {
+          "client_id": "445403904720-rcnqubgs7om71jqacie4452mih3k46fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKvlMsoQER173k7h8U_5Wg2KS0hmpCzfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445403904720-rcnqubgs7om71jqacie4452mih3k46fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
